@@ -10,4 +10,4 @@
 - Eğer makinenizde PM2 kurulu değilse kurun: `npm install -g pm2`
 - Bağımlılıkları kurun: `npm install`
 - .env dosyasını sample.env dosyasına göre düzenleyin. (BotFather üzerinden bir Telegram Bot hesabı açmanız gerekir)
-- PM2 Daemon'u başlatın: `pm2-runtime start pm2.json`
+- PM2 Daemon'u başlatın: `pm2 start pm2.json`
