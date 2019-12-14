@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "sozluk-bot",
+            "script": "index.js",
+            "instances": 1
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "sozlukbot",
+  "version": "1.0.0",
+  "description": "A Telegram bot powered by sozluk.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Atakan Ermiş",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "sozlukjs": "^1.0.14",
+    "telegraf": "^3.34.1"
+  }
+}
