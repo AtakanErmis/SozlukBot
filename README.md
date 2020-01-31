@@ -2,7 +2,7 @@
 
 ## Kullanım
 
-- Mesajlarınızda `@trsozlukbot <kelime>` şeklinde kullanabilirsiniz.
+- Mesajlarınızda `@sdictbot <kelime>` şeklinde kullanabilirsiniz.
 
 ## Kendim Host etmek istiyorum.
 
