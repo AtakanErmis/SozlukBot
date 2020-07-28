@@ -13,8 +13,8 @@ bot.on("inline_query", async ctx => {
 			ctx.update.inline_query.query
 		);
 		let result = [];
-		if (!meaningTDK.error) {
-				result = meaningTDK.map(e => {
+			if (!meaningTDK.error) {
+			result = meaningTDK.map(e => {
 					return {
 						type: "article",
 						id: `${e.kelime_no}: ${e.madde_id}`,
@@ -33,8 +33,9 @@ bot.on("inline_query", async ctx => {
 							parse_mode: "HTML"
 						}
 					};
-				})
+				});
 		}
+		
 		if (!meaningTureng.Results) {
 			result.push({
 				type: "article",
@@ -54,6 +55,16 @@ bot.on("inline_query", async ctx => {
 				}
 			});
 		}
+		result.unshift({
+			type: "article",
+			id: 0,
+			title: "Sponsor Reklam",
+			description: "<metin>",
+			input_message_content: {
+				message_text: "<metin>"
+			}
+		});
+
 
 		ctx.answerInlineQuery(result);
 	} catch (err) {
